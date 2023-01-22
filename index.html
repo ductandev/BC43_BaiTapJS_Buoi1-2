@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bài Tập JS Buổi 1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <!-- Bài 1: Tính tiền lương nhân viên
+        Viết chương trình tính tiền lương nhân viên. Lương 1 ngày: 100.000
+        Cho người dùng nhập vào số ngày làm. Công thức tính lương: Lương 1 ngày * số ngày làm
+    -->
+    <h2>Bài 1: Tính tiền lương nhân viên.</h2>
+    <div class="bai1">
+        <div class="container">
+            <div class="content">
+                <div class="input">
+                    <h5>Input</h5>
+                    <div class="input__text bg-primary text-light rounded">
+                        <p>- Số ngày làm</p>
+                        <p>- Tiền lương 1 ngày</p>
+                    </div>
+                </div>
+                <i class="fa-sharp fa-solid fa-right-long"></i>
+                <div class="step_processing">
+                    <h5>Các bước xử lý</h5>
+                    <div class="input__text bg-success text-light rounded">
+                        <p>- Bước 1: Tạo biến chứa "soNgayLam" được nhập từ bàn phím </p>
+                        <p>- Bước 2: Khai báo biến "luong1Ngay" và gán giá trị = 100.000</p>
+                        <p>- Bước 3: Tạo biến cho output là "tongTienLuong" và gán giá trị = 0</p>
+                        <p>- Bước 4: Sử dụng công thức tính tổng lương: Lương 1 ngày * số ngày làm </p>
+                        <p>- Bước 5: In kết quả tổng lương ra màn hình console và giao diện web </p>
+                    </div>
+                </div>
+                <i class="fa-sharp fa-solid fa-right-long"></i>
+                <div class="output">
+                    <h5>Output</h5>
+                    <div class="input__text bg-danger text-light rounded">
+                        <p>- Tổng tiền lương của nhân viên</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card w-50 m-auto mt-5">
+                <div class="card-header">
+                    <h4 class="text-center">Nhập vào số ngày làm</h4>
+                </div>
+                <div class="card-body">
+                    <input type="number" id="soNgayLam" class="form-control" placeholder="Số ngày làm">
+                    <button class="btn btn-success mt-3" onclick="tongTien()">Tính</button>
+                    <p class="mt-3">Ghi chú: Lương 1 ngày: 100.000</p>
+                </div>
+                <div class="card-footer fw-bold">
+                    <p>Kết quả:</p>
+                    <div id="thongBao1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- ==================================== -->
+    <!-- Bài 2: Tính giá trị trung bình
+        Viết chương trình nhập vào 5 số thực. Tính giá trị trung bình của 5 số này và xuất ra màn hình.
+        Gợi ý: Giá trị trung bình là tổng của 5 số người dùng nhập chia cho 5.
+    -->
+    <h2>Bài 2: Tính giá trị trung bình.</h2>
+    <div class="bai2">
+        <div class="container">
+            <div class="content">
+                <div class="input">
+                    <h5>Input</h5>
+                    <div class="input__text bg-primary text-light rounded">
+                        <p>- Nhập vào 5 số thực</p>
+                    </div>
+                </div>
+                <i class="fa-sharp fa-solid fa-right-long"></i>
+                <div class="step_processing">
+                    <h5>Các bước xử lý</h5>
+                    <div class="input__text bg-success text-light rounded">
+                        <p>- Bước 1: Tạo biến chứa "giaTri1, giaTri2, giaTri3, giaTri4, giaTri5" số thực được nhập từ bàn phím </p>
+                        <p>- Bước 2: Tạo biến cho output là "tagTrungBinh" và gán giá trị = 0</p>
+                        <p>- Bước 3: Sử dụng công thức tính trung bình: <br>
+                            tagTrungBinh =  [Number(giaTri1) + Number(giaTri2) + Number(giaTri3) + Number(giaTri4) + Number(giaTri5)] / 5; </p>
+                        <p>- Bước 5: In kết quả tổng giá trị trung bình ra màn hình console và giao diện web </p>
+                    </div>
+                </div>
+                <i class="fa-sharp fa-solid fa-right-long"></i>
+                <div class="output">
+                    <h5>Output</h5>
+                    <div class="input__text bg-danger text-light rounded">
+                        <p>- Giá trị trung bình</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card w-50 m-auto mt-5">
+                <div class="card-header">
+                    <h4 class="text-center">Nhập vào 5 số thực</h4>
+                </div>
+                <div class="card-body">
+                    <input type="number" id="soThuc1" class="form-control mt-2" placeholder="Nhập vào giá trị 1">
+                    <input type="number" id="soThuc2" class="form-control mt-2" placeholder="Nhập vào giá trị 2">
+                    <input type="number" id="soThuc3" class="form-control mt-2" placeholder="Nhập vào giá trị 3">
+                    <input type="number" id="soThuc4" class="form-control mt-2" placeholder="Nhập vào giá trị 4">
+                    <input type="number" id="soThuc5" class="form-control mt-2" placeholder="Nhập vào giá trị 5">
+                    <button class="btn btn-success mt-3" onclick="tinhTrungBinh()" >Tính</button>
+                </div>
+                <div class="card-footer fw-bold">
+                    <p>Kết quả:</p>
+                    <div id="thongBao2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- ==================================== -->
+    <!-- Bài 3: Quy đổi tiền 
+        Giá USD hiện nay đang là 23.500 VND. Viết chương trình quy đổi từ USD sang VND. 
+        Cho người dùng nhập vào số tiền USD. Tính và xuất ra số tiền sau quy đổi VND.
+        VD: Người dùng nhập 2 USD => xuất ra 47.000 VND
+    -->
+    <h2>Bài 3: Quy đổi tiền.</h2>
+    <div class="bai3">
+        <div class="container">
+            <div class="content">
+                <div class="input">
+                    <h5>Input</h5>
+                    <div class="input__text bg-primary text-light rounded">
+                        <p>- Số tiền USD</p>
+                        <p>- Giá USD hiện nay</p>
+                    </div>
+                </div>
+                <i class="fa-sharp fa-solid fa-right-long"></i>
+                <div class="step_processing">
+                    <h5>Các bước xử lý</h5>
+                    <div class="input__text bg-success text-light rounded">
+                        <p>- Bước 1: Tạo biến chứa giá trị "usd" được nhập từ bàn phím </p>
+                        <p>- Bước 2: Khai báo biến "menhGiaVnd" và gán giá trị = 23.500</p>
+                        <p>- Bước 3: Tạo biến cho output là "ketQuaChuyenDoi" và gán giá trị = 0</p>
+                        <p>- Bước 4: Sử dụng công thức chuyển đổi: usd * menhGiaVnd </p>
+                        <p>- Bước 5: In kết quả chuyển đổi ra màn hình console và giao diện web </p>
+                    </div>
+                </div>
+                <i class="fa-sharp fa-solid fa-right-long"></i>
+                <div class="output">
+                    <h5>Output</h5>
+                    <div class="input__text bg-danger text-light rounded">
+                        <p>- Số tiền sau quy đổi VND</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card w-50 m-auto mt-5">
+                <div class="card-header">
+                    <h4 class="text-center">Nhập vào số tiền USD</h4>
+                </div>
+                <div class="card-body">
+                    <input type="number" id="usd" class="form-control" placeholder="Số tiền $">
+                    <button class="btn btn-success mt-3" onclick="tienQuyDoi()">Tính</button>
+                    <p class="mt-3">Ghi chú: Giá USD hiện nay đang là 23.500 VND</p>
+                </div>
+                <div class="card-footer fw-bold">
+                    <p>Kết quả:</p>
+                    <div id="thongBao3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <h1>Thành công lớn trong năm mới</h1> -->
+    <hr>
+
+    <!-- ==================================== -->
+    <!-- Bài 4: Tính diện tích, chu vi hình chữ nhật 
+        Viết chương trình nhập vào 2 chiều dài và chiều rộng của hình chữ nhật
+        Tính và xuất ra diện tích, chu vi của hình chữ nhật đó.
+        Công thức:
+        - Diện tích = dài * rộng
+        - Chu vi = (dài + rộng)*2
+    -->
+    <h2>Bài 4: Tính diện tích, chu vi hình chữ nhật.</h2>
+    <div class="bai4">
+        <div class="container">
+            <div class="content">
+                <div class="input">
+                    <h5>Input</h5>
+                    <div class="input__text bg-primary text-light rounded">
+                        <p>- Chiều dài HCN</p>
+                        <p>- Chiều rộng HCN</p>
+                    </div>
+                </div>
+                <i class="fa-sharp fa-solid fa-right-long"></i>
+                <div class="step_processing">
+                    <h5>Các bước xử lý</h5>
+                    <div class="input__text bg-success text-light rounded">
+                        <p>- Bước 1: Tạo biến chứa giá trị "tagChieuDai, tagChieuRong" được nhập từ bàn phím </p>
+                        <p>- Bước 2: Tạo biến cho output là "dienTich, chuVi" và gán giá trị = 0</p>
+                        <p>- Bước 3: Sử dụng công thức tính diện tích: => dienTich = tagChieuDai * tagChieuRong;
+                            <br>Sử dụng công thức tính chu vi: => chuVi = (Number(tagChieuDai) + Number(tagChieuRong)) * 2; </p>
+                        <p>- Bước 4: In kết quả chuyển đổi ra màn hình console và giao diện web </p>
+                    </div>
+                </div>
+                <i class="fa-sharp fa-solid fa-right-long"></i>
+                <div class="output">
+                    <h5>Output</h5>
+                    <div class="input__text bg-danger text-light rounded">
+                        <p>- Diện tích HCN</p>
+                        <p>- Chu Vi HCN</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card w-50 m-auto mt-5">
+                <div class="card-header">
+                    <h4 class="text-center">Nhập vào chiều dài, chiều rộng của HCN</h4>
+                </div>
+                <div class="card-body">
+                    <input type="number" id="chieuDai" class="form-control mt-2" placeholder="Nhập chiều dài của hình chữ nhật">
+                    <input type="number" id="chieuRong" class="form-control mt-2" placeholder="Nhập chiều rộng của hình chữ nhật">
+                    <button class="btn btn-success mt-3" onclick="dienTichVaChuVi()">Tính</button>
+                    <p class="mt-3">Diện Tích và chu vi của hình chữ nhật là:</p>
+                </div>
+                <div class="card-footer fw-bold">
+                    <p>Kết quả:</p>
+                    <div id="thongBao4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- ==================================== -->
+    <!-- Bài 5: Tính tổng 2 ký số 
+        Viết chương trình nhập vào 1 số có 2 chữ số (VD: 12, 44, 83)
+        Tính tổng 2 ký số của số vừa nhập.
+        Ví dụ: 
+        12 => Tổng là 1 + 2 = 3
+        44 => Tổng là 4 + 4 = 8
+        Gợi ý:
+        Cách lấy số hàng đơn vị: int so_hang_dv = so % 10;
+        Cách lấy số hàng chục: int so_hang_chuc = so / 10;
+    -->
+    <h2>Bài 5: Tính tổng 2 ký số. </h2>
+    <div class="bai5">
+        <div class="container">
+            <div class="content">
+                <div class="input">
+                    <h5>Input</h5>
+                    <div class="input__text bg-primary text-light rounded">
+                        <p>- số có 2 chữ số (Vd: 68)</p>
+                    </div>
+                </div>
+                <i class="fa-sharp fa-solid fa-right-long"></i>
+                <div class="step_processing">
+                    <h5>Các bước xử lý</h5>
+                    <div class="input__text bg-success text-light rounded">
+                        <p>- Bước 1: Tạo biến chứa giá trị "tagKySo" được nhập từ bàn phím </p>
+                        <p>- Bước 2: Tạo biến cho output là "tong2KySo" và gán giá trị = 0</p>
+                        <p>- Bước 3: Chuyển "tagKySo" từ chuỗi thành số nguyên</p>
+                        <p>- Bước 4: Tạo biến => hangDonVi = tagKySo % 10</p>
+                        <p>- Bước 4: Tạo biến => hangChuc = tagKySo / 10</p>
+                        <p>- Bước 6: Sử dụng công thức chuyển đổi: => tong2KySo = hangDonVi + parseInt(hangChuc);</p>
+                        <p>- Bước 7: In kết quả chuyển đổi ra màn hình console và giao diện web </p>
+                    </div>
+                </div>
+                <i class="fa-sharp fa-solid fa-right-long"></i>
+                <div class="output">
+                    <h5>Output</h5>
+                    <div class="input__text bg-danger text-light rounded">
+                        <p>- Tổng của 2 ký số vừa nhập</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card w-50 m-auto mt-5">
+                <div class="card-header">
+                    <h4 class="text-center">Nhập vào 1 số có 2 chữ số (VD:68)</h4>
+                </div>
+                <div class="card-body">
+                    <input type="number" id="kySo" class="form-control" placeholder="1 số có 2 chữ số">
+                    <button class="btn btn-success mt-3" onclick="tinhTong2KySo()">Tính</button>
+                    <p class="mt-3">Tổng 2 ký số là:</p>
+                </div>
+                <div class="card-footer fw-bold">
+                    <p>Kết quả:</p>
+                    <div id="thongBao5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- Main JS -->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

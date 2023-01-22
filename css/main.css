@@ -1,0 +1,40 @@
+.container{
+    width: 85%;
+}
+p{
+    margin-bottom: 0;
+}
+
+.content{
+    display: grid;
+    gap: 10px;
+}
+.content .input{
+    grid-column: 1 / 2;
+}
+.content i:first-of-type{
+    grid-column: 2 /3;
+}
+.content .step_processing{
+    grid-column: 3/ 4;
+}
+.content i:last-of-type{
+    grid-column: 4 /5;
+}
+.content .output{
+    grid-column: 5/6;
+}
+.content i{
+    /* width: 10%; */
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content h5{
+    text-align: center;
+}
+.content .input__text{
+    height: 150px;
+}
+
